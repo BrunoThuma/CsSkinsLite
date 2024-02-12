@@ -2,23 +2,32 @@
 //  ContentView.swift
 //  CsSkinsLite
 //
-//  Created by Bruno Thuma on 05/02/24.
+//  Created by Bruno Thuma on 25/01/24.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+    @State private var userID: String = ""
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            VStack {
+                TextField("Enter Steam User ID", text: $userID)
+                    .padding()
+                
+                NavigationLink(destination: InventoryView(userID: userID)) {
+                    Text("Fetch Inventory")
+                        .padding()
+                }
+            }
+            .navigationTitle("Steam Inventory Viewer")
         }
-        .padding()
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
