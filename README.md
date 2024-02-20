@@ -5,6 +5,10 @@ Trabalho entregue a matéria de mobile business do curso de desenvolvimento de a
 ## Objetivo do app
 Aplicativo para visualização de colecionáveis do jogo Counter Strike 2
 
+## Print metricas apresentadas no console firebase
+<img width="1216" alt="image" src="https://github.com/BrunoThuma/CsSkinsLite/assets/40045005/cf997fbd-8ede-4a2e-a0f6-ee5f6ffc70ce">
+
+
 ## Principais métricas
 - Entrar na tela de visualização de inventário
 - Entrar na tela de visualização de item
